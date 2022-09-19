@@ -1,0 +1,45 @@
+Context
+The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 rounds. To navigate, the robot uses 24 ultrasound sensors arranged circularly around its "waist". The numbering of the ultrasound sensors starts at the front of the robot and increases in clockwise direction.
+
+The provided file contains the raw values of the measurements of all 24 ultrasound sensors and the corresponding class label (Moving forward, turning left, etc). Sensor readings are sampled at a rate of 9 samples per second.
+
+The wall-following task and data gathering were designed to test the hypothesis that this apparently simple navigation task is indeed a non-linearly separable classification task. Thus, linear classifiers are not able to learn the task and command the robot around the room without collisions. Nonlinear classifiers are able to learn the task and command the robot successfully without collisions.
+
+
+
+Content
+
+
+US1: ultrasound sensor at the front of the robot (reference angle: 180°) - (numeric: real)
+US2: ultrasound reading (reference angle: -165°) - (numeric: real)
+US3: ultrasound reading (reference angle: -150°) - (numeric: real)
+US4: ultrasound reading (reference angle: -135°) - (numeric: real)
+US5: ultrasound reading (reference angle: -120°) - (numeric: real)
+US6: ultrasound reading (reference angle: -105°) - (numeric: real)
+US7: ultrasound reading (reference angle: -90°) - (numeric: real)
+US8: ultrasound reading (reference angle: -75°) - (numeric: real)
+US9: ultrasound reading (reference angle: -60°) - (numeric: real)
+US10: ultrasound reading (reference angle: -45°) - (numeric: real)
+US11: ultrasound reading (reference angle: -30°) - (numeric: real)
+US12: ultrasound reading (reference angle: -15°) - (numeric: real)
+US13: reading of ultrasound sensor situated at the back of the robot (reference angle: 0°) - (numeric: real)
+US14: ultrasound reading (reference angle: 15°) - (numeric: real)
+US15: ultrasound reading (reference angle: 30°) - (numeric: real)
+US16: ultrasound reading (reference angle: 45°) - (numeric: real)
+US17: ultrasound reading (reference angle: 60°) - (numeric: real)
+US18: ultrasound reading (reference angle: 75°) - (numeric: real)
+US19: ultrasound reading (reference angle: 90°) - (numeric: real)
+US20: ultrasound reading (reference angle: 105°) - (numeric: real)
+US21: ultrasound reading (reference angle: 120°) - (numeric: real)
+US22: ultrasound reading (reference angle: 135°) - (numeric: real)
+US23: ultrasound reading (reference angle: 150°) - (numeric: real)
+US24: ultrasound reading (reference angle: 165°) - (numeric: real)
+Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+
+Acknowledgements
+These datasets were downlaoded from the UCI Machine Learning Repository
+
+Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+Inspiration
+Use these ultrasound readings to predict the class, i.e. given these readings, is the robot moving straight? turning left?
